@@ -18,7 +18,7 @@
 ### Deliverable Workbooks in Workspace
 - **Job Research Workbook:** [`job-research/Product Engineer Job Tracker.xlsx`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/job-research/Product%20Engineer%20Job%20Tracker.xlsx)
 - **Master Job Leads Tracker:** [`tracker/Job_Leads_Tracker.xlsx`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/tracker/Job_Leads_Tracker.xlsx)
-- **Online View-Only Tracker:** [LINK NEEDED: View-only Google Sheets or OneDrive link to Job Leads Tracker]
+- **Online View-Only Tracker:** [Google Sheets Job Leads Tracker](https://docs.google.com/spreadsheets/d/1l-AQRhKX7fquI_g6JpLT6ycSOlO6poBe/edit?usp=sharing&ouid=107319079137042683265&rtpof=true&sd=true) *(Verified public view link, HTTP 200)*
 
 ### Verified Research & Tracker Integrity
 1. **10 Role Postings & Skill Gap Analysis:**
@@ -140,13 +140,11 @@ To achieve full passing criteria under the graduation brief before final submiss
 
 1. **Lead Target Deficit:**
    - 89 additional qualified leads are needed to meet the mandatory 100-lead requirement in [`tracker/Job_Leads_Tracker.xlsx`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/tracker/Job_Leads_Tracker.xlsx).
-2. **Online Tracker Link:**
-   - Upload/sync the tracker to Google Sheets or OneDrive and insert the view-only URL.
-3. **Live Demos / Build Artifacts:**
+2. **Live Demos / Build Artifacts:**
    - Attach accessible APK downloads or video walkthroughs for Rota and Matinee.
-4. **Portfolio & Case Study URLs:**
+3. **Portfolio & Case Study URLs:**
    - Attach live URLs for your personal portfolio and three detailed project case studies.
-5. **Open Source & Social Proof:**
+4. **Open Source & Social Proof:**
    - Attach links to your submitted open-source pull requests and publish the draft post from `MATINEE/docs/linkedin_post.md` to LinkedIn.
-6. **Public Repository Setup:**
-   - Initialize Git in this graduation workspace and publish to GitHub as `final-task-funmilayo-faleye` containing this completed `SUBMISSION.md`.
+5. **Public Repository Setup:**
+   - Create `final-task-funmilayo-faleye` on GitHub and push this graduation workspace.
