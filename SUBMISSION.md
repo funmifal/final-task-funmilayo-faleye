@@ -148,5 +148,5 @@ To achieve full passing criteria under the graduation brief before final submiss
    - Standalone portfolio created in [`portfolio/index.html`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/portfolio/index.html). Needs public deployment link (e.g. GitHub Pages or Vercel) once public repo is live.
 4. **Open Source & Social Proof:**
    - Attach links to your submitted open-source pull requests and publish the draft post from `MATINEE/docs/linkedin_post.md` to LinkedIn.
-5. **Public Repository Setup:**
-   - Create `final-task-funmilayo-faleye` on GitHub and push this graduation workspace.
+5. **Public Repository Setup (COMPLETED):**
+   - Public repository is live and up-to-date at [https://github.com/funmifal/final-task-funmilayo-faleye](https://github.com/funmifal/final-task-funmilayo-faleye).
