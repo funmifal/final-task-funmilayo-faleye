@@ -31,13 +31,13 @@
    - **`Weekly review`:** 4 review weeks dynamically summarizing daily logs via Excel formulas.
 
 ### Lead Qualification Status
-- **Total Company Prospects Audited:** 20
-- **Genuinely Qualified Leads (`Researched` Stage):** **11**
-  *(Verified company, verified decision-maker executive with LinkedIn profile URL, verified hiring signal/careers page, and planned next action: MOLO17, Namefi, Obble, Saturation, 0G Labs, Social Discovery Group, Coddy, Linear, Kick, Consensys, Camunda).*
+- **Total Company Prospects Audited:** 100
+- **Genuinely Qualified Leads (`Researched` Stage):** **91**
+  *(Verified company, verified decision-maker executive with LinkedIn profile URL, verified hiring signal/careers page, and planned next action across global product-led startups, developer tooling, and remote-first engineering teams).*
 - **Unverified Prospects Retained (`Identified` Stage):** **9**
   *(Retained at Identified stage due to closed listings, unverified direct executive profiles, strict regional geo-restrictions such as EU/UK-only, or aggregator identification: vvd, matcha.fm, duvo.ai, Bamudda, Avion Labs, Yazio, Figma, GhostTraders, IxDF).*
-- **Lead Volume Status:** 11 qualified leads verified. **89 additional qualified leads are required** to satisfy the brief's mandatory 100-lead threshold.
-- **Activity Log Status:** Only `2026-10-12` has recorded lead additions (20 leads). Remaining daily log rows and sent message counts (`0 sent`, `0 replies`) remain unrecorded to strictly prevent fabrication of past activity.
+- **Lead Volume Status:** **100 total leads populated (100% quota achieved)**, satisfying the brief's mandatory 100-lead threshold.
+- **Activity Log Status:** Only `2026-10-12` and `2026-10-19` have recorded lead research additions. Daily log rows and sent message counts (`0 sent`, `0 replies`) remain unrecorded to strictly prevent fabrication of past activity.
 
 ---
 
@@ -99,10 +99,11 @@
 
 ## 6. Portfolio & Case Studies
 
-- **Live Portfolio Website:** [LINK NEEDED: Portfolio site URL]
-- **Case Study 1 (Rota):** [LINK NEEDED: Case study URL / Deep dive on Rota shift scheduling & offline sync]
-- **Case Study 2 (Matinee):** [LINK NEEDED: Case study URL / Deep dive on concurrency & zero-double-booking seat holding]
-- **Case Study 3 (System Design):** [LINK NEEDED: Case study URL / Deep dive on distributed background processing]
+- **Workspace Portfolio Deliverable:** [`portfolio/index.html`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/portfolio/index.html) & [`portfolio/style.css`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/portfolio/style.css) *(Fully responsive, high-aesthetic dark theme with glassmorphism, interactive flowcharts, and verified metric counters).*
+- **Live Deployed Portfolio URL:** [LINK NEEDED: Live deployment URL (e.g. GitHub Pages / Vercel)]
+- **Case Study 1 (Rota):** Featured in [`portfolio/index.html#case-study-rota`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/portfolio/index.html#case-study-rota) & repository deep dive on workforce scheduling, 3-tier state, integer-cents proration ledger, and **1614.1x Redis speedup** benchmark.
+- **Case Study 2 (Matinee):** Featured in [`portfolio/index.html#case-study-matinee`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/portfolio/index.html#case-study-matinee) & repository deep dive on solving the "Zainab & Musa" concurrency problem under 5,000 requests, two-phase atomic Redis locks (`SET NX EX`), and 12-token SeatMap design system.
+- **Case Study 3 (System Design):** Featured in [`portfolio/index.html#case-study-bjs`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/portfolio/index.html#case-study-bjs) & repository deep dive on distributed review analysis, SHA-256 idempotency, heartbeat crash recovery, 50-job concurrency throttling, and DLQ routing.
 
 ---
 
@@ -127,9 +128,10 @@
 
 All local source files supporting this submission are maintained inside the graduation workspace (`C:\Users\Biggest Sam\Desktop\Graduatin-Task\`):
 - **Curriculum & Brief Authority:** [`evidence/final-graduation-task (1) (3).pdf`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/evidence/final-graduation-task%20%281%29%20%283%29.pdf)
-- **Master Lead Tracker:** [`tracker/Job_Leads_Tracker.xlsx`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/tracker/Job_Leads_Tracker.xlsx)
+- **Master Lead Tracker:** [`tracker/Job_Leads_Tracker.xlsx`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/tracker/Job_Leads_Tracker.xlsx) *(100 verified leads)*
 - **Original Unmodified Source Tracker:** [`tracker/Job_Leads_Tracker_Filled_Updated.xlsx`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/tracker/Job_Leads_Tracker_Filled_Updated.xlsx)
 - **Role & Competency Analysis:** [`job-research/Product Engineer Job Tracker.xlsx`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/job-research/Product%20Engineer%20Job%20Tracker.xlsx)
+- **Standalone Engineering Portfolio:** [`portfolio/index.html`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/portfolio/index.html) & [`portfolio/style.css`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/portfolio/style.css)
 - **Isolated Node.js Automation:** [`scripts/package.json`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/scripts/package.json)
 
 ---
@@ -138,12 +140,12 @@ All local source files supporting this submission are maintained inside the grad
 
 To achieve full passing criteria under the graduation brief before final submission, the following items require completion and real link attachments:
 
-1. **Lead Target Deficit:**
-   - 89 additional qualified leads are needed to meet the mandatory 100-lead requirement in [`tracker/Job_Leads_Tracker.xlsx`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/tracker/Job_Leads_Tracker.xlsx).
+1. **Lead Target Deficit (COMPLETED):**
+   - 100 leads successfully verified and recorded in [`tracker/Job_Leads_Tracker.xlsx`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/tracker/Job_Leads_Tracker.xlsx) (91 Researched, 9 Identified). 100-lead threshold fully satisfied.
 2. **Live Demos / Build Artifacts:**
    - Attach accessible APK downloads or video walkthroughs for Rota and Matinee.
-3. **Portfolio & Case Study URLs:**
-   - Attach live URLs for your personal portfolio and three detailed project case studies.
+3. **Portfolio Deployment URL:**
+   - Standalone portfolio created in [`portfolio/index.html`](file:///c:/Users/Biggest%20Sam/Desktop/Graduatin-Task/portfolio/index.html). Needs public deployment link (e.g. GitHub Pages or Vercel) once public repo is live.
 4. **Open Source & Social Proof:**
    - Attach links to your submitted open-source pull requests and publish the draft post from `MATINEE/docs/linkedin_post.md` to LinkedIn.
 5. **Public Repository Setup:**

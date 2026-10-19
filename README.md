@@ -25,6 +25,9 @@ This repository hosts the master graduation deliverables and evidence record for
 ├── tracker/                 # Part 1: Master job leads tracker (4 tabs: Leads, Daily log, Message library, Weekly review)
 │   ├── Job_Leads_Tracker.xlsx
 │   └── Job_Leads_Tracker_Filled_Updated.xlsx
+├── portfolio/               # Standalone engineering portfolio & case studies site
+│   ├── index.html
+│   └── style.css
 └── scripts/                 # Isolated Node.js automation scripts (ExcelJS)
     ├── package.json
     ├── package-lock.json

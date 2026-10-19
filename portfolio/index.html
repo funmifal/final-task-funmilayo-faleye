@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funmilayo Faleye — Product Engineer & Design Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Funmilayo Faleye, Product Engineer & Design Engineer specializing in high-concurrency mobile systems, React Native, TypeScript, Redis caching, and resilient distributed architectures.">
+  <meta name="author" content="Funmilayo Faleye">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-bar">
+      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="Funmilayo Faleye Home">
+        <div class="brand-avatar">FF</div>
+        <span>Funmilayo Faleye</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" id="nav-about">About</a></li>
+          <li><a href="#readiness" id="nav-readiness">Remote Setup</a></li>
+          <li><a href="#case-studies" id="nav-case-studies">Case Studies</a></li>
+          <li><a href="#skills" id="nav-skills">Tech Stack</a></li>
+          <li><a href="#contact" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/funmifal" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="nav-github-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm" id="nav-hire-btn">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-pill" id="hero-status-pill">
+          <span class="status-pulse"></span>
+          <span>Available for Remote Roles &bull; 1pm &ndash; 9pm WAT (US East &amp; UK/EU Overlap)</span>
+        </div>
+
+        <h1 class="hero-title" id="main-heading">
+          Product Engineer &amp; Design Engineer building <span class="gradient-text">high-concurrency</span> mobile &amp; backend systems.
+        </h1>
+
+        <p class="hero-subtitle" id="hero-lead-text">
+          Bridging technical backend engineering with responsive, high-fidelity user experiences. Specialized in sub-millisecond Redis caching, zero-double-booking seat holding, and crash-resilient distributed background queues.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#case-studies" class="btn btn-primary" id="cta-case-studies">
+            View 3 Deep-Dive Case Studies
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <button type="button" class="btn btn-secondary" id="btn-copy-email" onclick="copyEmailToClipboard()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            funmilayofal@gmail.com
+          </button>
+          <a href="https://github.com/funmifal" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="cta-github">
+            github.com/funmifal
+          </a>
+        </div>
+
+        <!-- Verified Metrics Strip -->
+        <div class="proof-strip" id="proof-metrics">
+          <div class="proof-card" id="metric-card-speedup">
+            <div class="metric">1,614.1x</div>
+            <div class="label">Redis Caching Speedup</div>
+            <div class="desc">Verified k6 load benchmark reducing cursor query latency to 0.18ms in Rota.</div>
+          </div>
+          <div class="proof-card" id="metric-card-concurrency">
+            <div class="metric">0%</div>
+            <div class="label">Double Bookings</div>
+            <div class="desc">Deterministic atomic seat reservation under 5,000 concurrent requests in Matinee.</div>
+          </div>
+          <div class="proof-card" id="metric-card-workers">
+            <div class="metric">50 Max</div>
+            <div class="label">Distributed Worker Cap</div>
+            <div class="desc">Idempotent queue execution with automatic heartbeat crash recovery &amp; DLQ.</div>
+          </div>
+          <div class="proof-card" id="metric-card-timezone">
+            <div class="metric">UTC +1</div>
+            <div class="label">Lagos, Nigeria (WAT)</div>
+            <div class="desc">Full daily overlap with US Eastern (1pm&ndash;9pm WAT) and London/Europe.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Remote Readiness & Working Hours Section -->
+    <section class="container" id="readiness">
+      <div class="section-header">
+        <span class="section-tag">Remote Infrastructure</span>
+        <h2 class="section-title">Built for Autonomous, Global Remote Teams</h2>
+        <p class="section-desc">Clear communication, dependable infrastructure, and predictable timezone overlap eliminate remote friction before it starts.</p>
+      </div>
+
+      <div class="readiness-grid">
+        <div class="readiness-card" id="card-timezone">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            Time Zone &amp; Availability
+          </h3>
+          <ul class="readiness-list">
+            <li>
+              <span class="check-icon">&#10003;</span>
+              <div><strong>Core Hours: 1:00 PM &ndash; 9:00 PM WAT</strong> &mdash; Guarantees 4&ndash;5 hours of direct, real-time collaboration with US Eastern (9:00 AM &ndash; 2:00 PM EST).</div>
+            </li>
+            <li>
+              <span class="check-icon">&#10003;</span>
+              <div><strong>UK &amp; European Alignment</strong> &mdash; 7+ hours of synchronous daily overlap with London (GMT) and Central European Time (CET).</div>
+            </li>
+            <li>
+              <span class="check-icon">&#10003;</span>
+              <div><strong>Async-First Cadence</strong> &mdash; Comprehensive PR writeups, Loom walkthroughs, and clear architectural ADRs keep development moving regardless of timezone.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="readiness-card" id="card-hardware">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+            Power &amp; Network Redundancy
+          </h3>
+          <ul class="readiness-list">
+            <li>
+              <span class="check-icon">&#10003;</span>
+              <div><strong>Dual Independent Internet Connections</strong> &mdash; High-speed fiber primary supplemented by automated low-latency 5G cellular failover.</div>
+            </li>
+            <li>
+              <span class="check-icon">&#10003;</span>
+              <div><strong>Dedicated Inverter &amp; Battery Power</strong> &mdash; Continuous uninterruptible power supply guaranteeing zero work stoppage or dropped calls.</div>
+            </li>
+            <li>
+              <span class="check-icon">&#10003;</span>
+              <div><strong>Self-Contained Dev Environment</strong> &mdash; Fully Dockerized local microservices and automated reproducible test pipelines.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep-Dive Case Studies -->
+    <section class="case-studies-section" id="case-studies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Production Work</span>
+          <h2 class="section-title">Featured Engineering Case Studies</h2>
+          <p class="section-desc">Real code, real load testing benchmarks, and verified architectural trade-offs solved in production-grade mobile and distributed systems.</p>
+        </div>
+
+        <!-- Case Study 1: ROTA -->
+        <article class="case-study-card" id="case-study-rota">
+          <div class="case-study-header">
+            <div>
+              <div class="case-meta">
+                <span class="case-pill live-verified">Production Architecture</span>
+                <span class="case-pill">Mobile &bull; Backend</span>
+                <span class="case-pill">1,614x Speedup</span>
+              </div>
+              <h3 class="case-study-title">Rota &mdash; Enterprise Workforce Scheduling &amp; Sub-Millisecond Redis Feed</h3>
+              <p class="case-study-subtitle">Multi-tenant workforce mobile application engineered with offline synchronization, double-entry financial ledger, and high-performance cursor pagination.</p>
+            </div>
+            <div class="case-study-links">
+              <a href="https://github.com/funmifal/ROTA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="rota-github-link">
+                GitHub Repo &rarr;
+              </a>
+              <a href="https://github.com/funmifal/ROTA/blob/main/LOAD_TEST_REPORT.md" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" id="rota-benchmark-link">
+                Load Test Report
+              </a>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <div class="case-narrative">
+              <h4>The Engineering Challenge</h4>
+              <p>
+                In high-velocity enterprise workforce environments, hundreds of employees simultaneously request activity updates and shift assignments during shift changeovers. Standard relational database queries with traditional offset pagination caused database connection pool exhaustion and spiking latency as the activity log exceeded millions of rows.
+              </p>
+
+              <h4>The Architectural Solution</h4>
+              <p>
+                Engineered a 3-tier client/server architecture combining React Native, Express BFF, and Redis read-through caching with keyspace cursor pagination. Implemented TanStack Query for server state cache invalidation, Zustand for lightweight client state, and AsyncStorage for seamless offline resilience. Subscription billing was built using integer-cents deterministic proration and a double-entry ledger.
+              </p>
+
+              <div class="case-metrics-grid">
+                <div class="case-metric-box">
+                  <div class="val">0.18ms</div>
+                  <div class="label">Average Response Time</div>
+                  <div class="subtext">Down from 290.5ms on un-cached relational queries</div>
+                </div>
+                <div class="case-metric-box">
+                  <div class="val">200 VUs</div>
+                  <div class="label">Sustained Concurrent Users</div>
+                  <div class="subtext">Zero connection drops during k6 load stress test</div>
+                </div>
+              </div>
+
+              <h4>Verified Repository Documentation</h4>
+              <p>
+                Complete architectural specifications available in the repo: <code>ARCHITECTURE.md</code> (system topology), <code>STATE.md</code> (3-tier state model), <code>PRORATION.md</code> (double-entry math), and <code>LOAD_TEST_REPORT.md</code>.
+              </p>
+
+              <div class="tech-pills">
+                <span class="tech-tag">React Native (Expo)</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">PostgreSQL (Prisma)</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">BullMQ</span>
+                <span class="tech-tag">k6 Load Testing</span>
+                <span class="tech-tag">Flutterwave</span>
+              </div>
+            </div>
+
+            <!-- Architecture Diagram -->
+            <div class="diagram-card" id="diagram-rota">
+              <div class="diagram-header">
+                <div class="diagram-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                  ROTA DATA &amp; CACHE PIPELINE
+                </div>
+                <span class="case-pill">k6 Verified</span>
+              </div>
+              <div class="diagram-body">
+                <div class="diag-step">
+                  <span class="step-idx">01</span>
+                  <div class="step-text"><strong>Mobile Client</strong> (Expo / TanStack Query offline cache)</div>
+                </div>
+                <div class="diag-arrow">&darr; Cursor-based feed request</div>
+                <div class="diag-step">
+                  <span class="step-idx">02</span>
+                  <div class="step-text"><strong>Express BFF Gateway</strong> (JWT auth &amp; tenant isolation)</div>
+                </div>
+                <div class="diag-arrow">&darr; Check cache hit</div>
+                <div class="diag-step">
+                  <span class="step-idx">03</span>
+                  <div class="step-text"><strong>Redis Sorted Set Cache</strong> (0.18ms read response &bull; 99.4% hit)</div>
+                </div>
+                <div class="diag-arrow">&darr; Cache miss fallback only</div>
+                <div class="diag-step">
+                  <span class="step-idx">04</span>
+                  <div class="step-text"><strong>PostgreSQL Read Replica</strong> (Prisma pool &bull; auto write-through)</div>
+                </div>
+                <div class="diag-arrow">&darr; Async event dispatch</div>
+                <div class="diag-step">
+                  <span class="step-idx">05</span>
+                  <div class="step-text"><strong>BullMQ Queue Workers</strong> (Push notifications &amp; audit logging)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 2: MATINEE -->
+        <article class="case-study-card" id="case-study-matinee">
+          <div class="case-study-header">
+            <div>
+              <div class="case-meta">
+                <span class="case-pill live-verified">High Concurrency</span>
+                <span class="case-pill">Mobile Cinema</span>
+                <span class="case-pill">Zero Double Bookings</span>
+              </div>
+              <h3 class="case-study-title">Matinee &mdash; High-Concurrency Cinema Booking &amp; The "Zainab &amp; Musa" Solution</h3>
+              <p class="case-study-subtitle">Mobile cinema ticket booking platform built with atomic Redis seat locking, database unique constraints, and high-fidelity interactive seat map.</p>
+            </div>
+            <div class="case-study-links">
+              <a href="https://github.com/funmifal/MATINEE" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="matinee-github-link">
+                GitHub Repo &rarr;
+              </a>
+              <a href="https://github.com/funmifal/MATINEE/blob/main/TRAFFIC.md" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" id="matinee-traffic-link">
+                Traffic &amp; Locking Spec
+              </a>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <div class="case-narrative">
+              <h4>The "Zainab &amp; Musa" Concurrency Problem</h4>
+              <p>
+                During high-demand movie premiere ticket drops, thousands of cinema goers attempt to reserve the same optimal seats at the exact same millisecond. If user Zainab and user Musa both select Seat F14 simultaneously, standard relational queries without distributed locks create race conditions, double charging customers and producing duplicate bookings.
+              </p>
+
+              <h4>The Multi-Layered Defense</h4>
+              <p>
+                Designed a two-phase seat reservation system. First, atomic Redis locks using <code>SET seat:{id}:lock {user_id} NX EX 600</code> hold the seat for 10 minutes with zero database load. If checkout completes, a PostgreSQL composite unique constraint <code>(showtime_id, seat_id)</code> provides an immutable safety net. If payment fails or times out, the Redis key expires automatically, releasing the seat instantly without human intervention.
+              </p>
+
+              <div class="case-metrics-grid">
+                <div class="case-metric-box">
+                  <div class="val">0</div>
+                  <div class="label">Double Bookings Recorded</div>
+                  <div class="subtext">Under 5,000 simulated concurrent seat selection requests</div>
+                </div>
+                <div class="case-metric-box">
+                  <div class="val">&lt; 50ms</div>
+                  <div class="label">P95 Hold Latency</div>
+                  <div class="subtext">Verified across 500 Virtual Users in k6 load tests</div>
+                </div>
+              </div>
+
+              <h4>Tactile Design Engineering</h4>
+              <p>
+                Constructed an interactive, performant SeatMap component using 12 design system primitives, rendering 200+ individual SVG seats at 60fps on low-tier mobile devices with real-time optimistic state updates.
+              </p>
+
+              <div class="tech-pills">
+                <span class="tech-tag">React Native (Expo)</span>
+                <span class="tech-tag">Atomic Redis (SET NX EX)</span>
+                <span class="tech-tag">PostgreSQL (Prisma)</span>
+                <span class="tech-tag">BullMQ Queue</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Design System Tokens</span>
+                <span class="tech-tag">Webhook Idempotency</span>
+              </div>
+            </div>
+
+            <!-- Architecture Diagram -->
+            <div class="diagram-card" id="diagram-matinee">
+              <div class="diagram-header">
+                <div class="diagram-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  TWO-PHASE SEAT RESERVATION FLOW
+                </div>
+                <span class="case-pill">Zero Race Conditions</span>
+              </div>
+              <div class="diagram-body">
+                <div class="diag-step">
+                  <span class="step-idx">01</span>
+                  <div class="step-text"><strong>Seat Selection Tap</strong> (Optimistic client state on 60fps SVG grid)</div>
+                </div>
+                <div class="diag-arrow">&darr; Concurrent POST /api/v1/seats/hold</div>
+                <div class="diag-step">
+                  <span class="step-idx">02</span>
+                  <div class="step-text"><strong>Redis Atomic Lock:</strong> <code>SET NX EX 600</code> (First winner gets 10m TTL)</div>
+                </div>
+                <div class="diag-arrow">&darr; Second request receives HTTP 409 Conflict</div>
+                <div class="diag-step">
+                  <span class="step-idx">03</span>
+                  <div class="step-text"><strong>Payment Processing</strong> (Flutterwave webhook with SHA-256 idempotency)</div>
+                </div>
+                <div class="diag-arrow">&darr; Database transaction on success</div>
+                <div class="diag-step">
+                  <span class="step-idx">04</span>
+                  <div class="step-text"><strong>Postgres Commit</strong> (Unique <code>[showtime_id, seat_id]</code> guarantee)</div>
+                </div>
+                <div class="diag-arrow">&darr; Background post-processing</div>
+                <div class="diag-step">
+                  <span class="step-idx">05</span>
+                  <div class="step-text"><strong>Ticket QR Generation</strong> (Asynchronous BullMQ worker dispatch)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 3: BACKGROUND JOB SYSTEM -->
+        <article class="case-study-card" id="case-study-bjs">
+          <div class="case-study-header">
+            <div>
+              <div class="case-meta">
+                <span class="case-pill live-verified">Distributed Systems</span>
+                <span class="case-pill">Fault Tolerance</span>
+                <span class="case-pill">13 Test Evidence Files</span>
+              </div>
+              <h3 class="case-study-title">Background Job System &mdash; Resilient Distributed Queue &amp; Crash Recovery</h3>
+              <p class="case-study-subtitle">Asynchronous background processing architecture for AI customer review analysis featuring worker concurrency limits, automatic crash recovery, and dead-letter queues.</p>
+            </div>
+            <div class="case-study-links">
+              <a href="https://github.com/ScrappyAT/background-job-system" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="bjs-github-link">
+                GitHub Repo &rarr;
+              </a>
+              <a href="../evidence/" target="_blank" class="btn btn-ghost btn-sm" id="bjs-evidence-link">
+                13 Execution Artifacts
+              </a>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <div class="case-narrative">
+              <h4>The Distributed Processing Challenge</h4>
+              <p>
+                In high-volume AI review ingestion systems, external LLM endpoints frequently time out, worker nodes crash mid-execution, and clients submit duplicate review batches. Without durable queue semantics, jobs are either dropped permanently, executed multiple times (wasting expensive API tokens), or left in an orphaned "in-progress" state forever.
+              </p>
+
+              <h4>The Resilient Architecture</h4>
+              <p>
+                Engineered a distributed Node.js/TypeScript queue service built on Redis sorted sets and pub/sub. Every incoming payload is fingerprinted with an SHA-256 hash to enforce exact-once idempotency. Built a heartbeat monitor that reclaims stalled jobs if a worker node crashes ungracefully. Failed jobs undergo exponential backoff retries with random jitter before routing to an operator-accessible Dead Letter Queue (DLQ).
+              </p>
+
+              <div class="case-metrics-grid">
+                <div class="case-metric-box">
+                  <div class="val">100%</div>
+                  <div class="label">Idempotency Enforcement</div>
+                  <div class="subtext">Zero duplicate LLM calls on identical review submissions</div>
+                </div>
+                <div class="case-metric-box">
+                  <div class="val">50 Jobs</div>
+                  <div class="label">Strict Concurrency Cap</div>
+                  <div class="subtext">Prevents worker starvation and upstream API rate limits</div>
+                </div>
+              </div>
+
+              <h4>Verified Empirical Evidence</h4>
+              <p>
+                Verified through 13 execution screenshots in <code>evidence/</code>: duplicate job rejection (<code>01-idempotency.png</code>), exponential backoff (<code>03-backoff-retries.png</code>), crash recovery lifecycle (<code>05-stuck-before-kill</code> through <code>08-stuck-recovery-completed</code>), and DLQ inspection (<code>09-dead-letter-view.png</code>).
+              </p>
+
+              <div class="tech-pills">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Redis Streams &amp; BullMQ</span>
+                <span class="tech-tag">Exponential Backoff</span>
+                <span class="tech-tag">Heartbeat Crash Recovery</span>
+                <span class="tech-tag">Dead Letter Queue (DLQ)</span>
+                <span class="tech-tag">Idempotency Keys</span>
+              </div>
+            </div>
+
+            <!-- Architecture Diagram -->
+            <div class="diagram-card" id="diagram-bjs">
+              <div class="diagram-header">
+                <div class="diagram-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                  JOB LIFECYCLE &amp; FAULT RECOVERY
+                </div>
+                <span class="case-pill">13 Test Proofs</span>
+              </div>
+              <div class="diagram-body">
+                <div class="diag-step">
+                  <span class="step-idx">01</span>
+                  <div class="step-text"><strong>Job Producer API:</strong> Generates payload SHA-256 key</div>
+                </div>
+                <div class="diag-arrow">&darr; Reject duplicate if key exists</div>
+                <div class="diag-step">
+                  <span class="step-idx">02</span>
+                  <div class="step-text"><strong>Redis Priority Queue:</strong> Workers pull with heartbeat lock</div>
+                </div>
+                <div class="diag-arrow">&darr; Worker node crashes mid-job</div>
+                <div class="diag-step">
+                  <span class="step-idx">03</span>
+                  <div class="step-text"><strong>Stalled Job Monitor:</strong> Detects expired heartbeat &amp; reclaims job</div>
+                </div>
+                <div class="diag-arrow">&darr; Transient API timeout occurs</div>
+                <div class="diag-step">
+                  <span class="step-idx">04</span>
+                  <div class="step-text"><strong>Exponential Backoff:</strong> Retries with jitter (attempts 1 &rarr; 5)</div>
+                </div>
+                <div class="diag-arrow">&darr; Max retries exceeded</div>
+                <div class="diag-step">
+                  <span class="step-idx">05</span>
+                  <div class="step-text"><strong>Dead Letter Queue (DLQ):</strong> Isolated for UI review &amp; manual replay</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills & Tech Stack Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Skills Matrix</h2>
+          <p class="section-desc">Practical proficiency cultivated across production mobile development, cloud systems, and UX design systems.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category" id="skill-cat-frontend">
+            <h3 class="skill-cat-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              Frontend &amp; Mobile
+            </h3>
+            <div class="skill-items">
+              <div class="skill-item"><span class="name">React Native &amp; Expo</span><span class="level">Production</span></div>
+              <div class="skill-item"><span class="name">TypeScript &amp; JavaScript</span><span class="level">Advanced</span></div>
+              <div class="skill-item"><span class="name">React &amp; Next.js</span><span class="level">Proficient</span></div>
+              <div class="skill-item"><span class="name">Zustand &amp; TanStack Query</span><span class="level">Advanced</span></div>
+              <div class="skill-item"><span class="name">Tailwind CSS &amp; Vanilla CSS</span><span class="level">Production</span></div>
+              <div class="skill-item"><span class="name">Design Tokens &amp; Figma</span><span class="level">Design Eng</span></div>
+            </div>
+          </div>
+
+          <div class="skill-category" id="skill-cat-backend">
+            <h3 class="skill-cat-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-indigo)" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              Backend &amp; Distributed Systems
+            </h3>
+            <div class="skill-items">
+              <div class="skill-item"><span class="name">Node.js &amp; Express.js</span><span class="level">Production</span></div>
+              <div class="skill-item"><span class="name">Redis (Caching, SET NX EX)</span><span class="level">Advanced</span></div>
+              <div class="skill-item"><span class="name">BullMQ Distributed Queues</span><span class="level">Advanced</span></div>
+              <div class="skill-item"><span class="name">PostgreSQL &amp; Prisma ORM</span><span class="level">Production</span></div>
+              <div class="skill-item"><span class="name">Cursor Pagination &amp; Sharding</span><span class="level">Proficient</span></div>
+              <div class="skill-item"><span class="name">Idempotency &amp; Webhooks</span><span class="level">Production</span></div>
+            </div>
+          </div>
+
+          <div class="skill-category" id="skill-cat-devops">
+            <h3 class="skill-cat-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              Testing, Reliability &amp; Tools
+            </h3>
+            <div class="skill-items">
+              <div class="skill-item"><span class="name">k6 Concurrency Load Testing</span><span class="level">Verified</span></div>
+              <div class="skill-item"><span class="name">Docker &amp; Containerization</span><span class="level">Proficient</span></div>
+              <div class="skill-item"><span class="name">Git &amp; GitHub Actions</span><span class="level">Production</span></div>
+              <div class="skill-item"><span class="name">Dead-Letter Queue Routing</span><span class="level">Production</span></div>
+              <div class="skill-item"><span class="name">Double-Entry Ledger Systems</span><span class="level">Proficient</span></div>
+              <div class="skill-item"><span class="name">Offline First (AsyncStorage)</span><span class="level">Production</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Outreach Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2>Ready to Build Resilient Software Together</h2>
+          <p>
+            Whether you are scaling high-concurrency systems, architecting sub-millisecond mobile feeds, or refining your product's design engineering, I'd love to talk.
+          </p>
+
+          <div class="contact-buttons">
+            <a href="mailto:funmilayofal@gmail.com" class="btn btn-primary" id="btn-email-direct">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Send an Email
+            </a>
+            <button type="button" class="btn btn-secondary" id="btn-copy-email-bottom" onclick="copyEmailToClipboard()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              Copy Email Address
+            </button>
+            <a href="https://github.com/funmifal" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="btn-github-bottom">
+              View GitHub Profile &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Funmilayo Faleye</strong> &bull; Product Engineer &amp; Design Engineer
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.25rem;">
+          Dev &amp; Design HQ Bootcamp Graduation Portfolio &bull; Lagos, Nigeria (WAT / UTC+1)
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top</a>
+        <a href="https://github.com/funmifal" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="../SUBMISSION.md">Master Submission Doc</a>
+        <a href="../tracker/Job_Leads_Tracker.xlsx">Leads Tracker</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Element -->
+  <div class="toast-msg" id="toast" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span>Email copied to clipboard (funmilayofal@gmail.com)</span>
+  </div>
+
+  <!-- Interactive Logic -->
+  <script>
+    function copyEmailToClipboard() {
+      const email = 'funmilayofal@gmail.com';
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(email).then(showToast);
+      } else {
+        const textArea = document.createElement('textarea');
+        textArea.value = email;
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.select();
+        try {
+          document.execCommand('copy');
+          showToast();
+        } catch (err) {
+          console.error('Fallback clipboard copy failed:', err);
+        }
+        document.body.removeChild(textArea);
+      }
+    }
+
+    function showToast() {
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3500);
+    }
+  </script>
+</body>
+</html>
