@@ -1,0 +1,13 @@
+{
+  "name": "graduation-task-scripts",
+  "version": "1.0.0",
+  "description": "Automation scripts for graduation task lead tracker and research",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node -e \"require('exceljs'); console.log('exceljs loaded successfully');\""
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
